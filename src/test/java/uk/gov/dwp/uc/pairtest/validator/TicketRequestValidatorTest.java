@@ -23,7 +23,6 @@ public class TicketRequestValidatorTest {
     private final Long accountId;
     private final TicketTypeRequest[] ticketRequests;
 
-    // Fix: Use varargs (TicketTypeRequest...)
     public TicketRequestValidatorTest(Long accountId, TicketTypeRequest... ticketRequests) {
         this.accountId = accountId;
         this.ticketRequests = ticketRequests;
