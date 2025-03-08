@@ -76,22 +76,23 @@ Solution Overview
 
 This project implements a Cinema Ticket Service based on the given requirements. It consists of key components that handle ticket purchases, validations, payments, and seat reservations.
 
-1. TicketServiceImpl
-Responsible for processing ticket purchases.
-Validates requests using TicketRequestValidator.
-Makes payments via TicketPaymentService.
-Reserves seats using SeatReservationService.
+1. TicketServiceImpl:
+ Responsible for processing ticket purchases.
+ Validates requests using TicketRequestValidator.
+ Makes payments via TicketPaymentService.
+ Reserves seats using SeatReservationService.
 2. TicketRequestValidator
-Ensures business rules are followed:
-Validates account ID.
-Ensures at least one adult ticket is purchased if child/infant tickets are included.
-Checks ticket limits (max 25 tickets per purchase).
+ Ensures business rules are followed:
+ Validates account ID.
+ Ensures at least one adult ticket is purchased if child/infant tickets are included.
+ Checks ticket limits (max 25 tickets per purchase).
 3. TicketServiceImplTest
-Uses Mockito for unit testing.
-Tests valid and invalid ticket purchases.
-Ensures correct interactions with dependencies (payment and seat reservation).
+ Uses Mockito for unit testing.
+ Tests valid and invalid ticket purchases.
+ Ensures correct interactions with dependencies (payment and seat reservation).
 4. TicketRequestValidatorTest
-Validates different request scenarios.
-Ensures invalid requests throw exceptions.
-Confirms valid requests pass successfully.
+ Validates different request scenarios.
+ Ensures invalid requests throw exceptions.
+ Confirms valid requests pass successfully.
+
 This implementation follows clean coding practices and provides comprehensive test coverage to ensure correctness.
